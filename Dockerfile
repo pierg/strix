@@ -28,17 +28,9 @@ RUN \
 WORKDIR /home
 
 # Cloning Strix
-RUN git clone https://gitlab.lrz.de/i7/strix.git
+RUN git clone https://github.com/pierg/strix.git
 
 WORKDIR /home/strix
-
-RUN \
-    git submodule init && \
-    git submodule update
-
-RUN make
-
-WORKDIR /home/strix/bin
 
 ENTRYPOINT ["./entrypoint.sh"]
 CMD [""]
