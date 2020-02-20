@@ -24,4 +24,4 @@ subprocess.call(args)
 
 # output = subprocess.check_output(['./strix',  ""])
 
-print(output)
+# print(output)
