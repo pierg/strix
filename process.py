@@ -17,9 +17,8 @@ file = files_folder + sys.argv[1]
 
 assumptions, guarantees, ins, outs = parse(file)
 
+params = Implies(assumptions, guarantees) + "--ins=" + ins + "--outs=" + outs
 
-args = ("./strix", Implies(assumptions, guarantees), "--ins=", ins, "--outs=", outs)
-popen = subprocess.Popen(args, stdout=subprocess.PIPE)
-popen.wait()
-output = popen.stdout.read()
+output = subprocess.check_output(['./strix',  params])
+
 print(output)
