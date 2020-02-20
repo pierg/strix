@@ -8,8 +8,8 @@ git pull
 
 if [ $# -eq 0 ]
   then
-    echo "No parameters provided"
-    source run_strix.sh
+    echo "No parameters provided, running bash"
+    bash
 else
     source run_strix.sh "$@"
 fi
