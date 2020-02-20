@@ -22,6 +22,6 @@ subprocess.call(args)
 
 # params = ' -f "' + Implies(assumptions, guarantees) + '" --ins="' + ins + '" --outs="' + outs + '"'
 
-output = subprocess.check_output(['./strix',  ""])
+# output = subprocess.check_output(['./strix',  ""])
 
 print(output)
