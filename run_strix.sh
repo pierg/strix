@@ -4,6 +4,7 @@ if [ $# -eq 0 ]
     echo "Running bash"
     bash
 else
-    echo "Lauching Strix with Parameters: " "$@"
+    echo "Parsing and launching stirx on: " "$@"
+    python3 ./process.py "$@"
     ./strix "$@"
 fi
