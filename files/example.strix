@@ -3,12 +3,12 @@
 
 ASSUMPTIONS
 	
-	G F !request_m
+	G F ! request_m
 
 GUARANTEES
 
-	G (!grant_m | !grant_0)
-	G (request_m -> X (!grant_0 U grant_m))
+	G (! grant_m | ! grant_0)
+	G (request_m -> X (! grant_0 U grant_m))
 	G (request_0 -> F grant_0)
 
 INPUTS
