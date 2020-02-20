@@ -36,4 +36,3 @@ RUN chmod +x entrypoint.sh
 RUN chmod +x run_strix.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
-CMD [""]
