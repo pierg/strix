@@ -22,7 +22,9 @@ RUN \
         libboost-filesystem-dev \
         libboost-iostreams-dev \
         zlib1g-dev \
-        openjdk-12-jdk
+        openjdk-12-jdk \
+        python3-pip \
+        python3-dev
 
 
 WORKDIR /home
