@@ -33,3 +33,4 @@ RUN git clone https://github.com/pierg/strix.git
 WORKDIR /home/strix
 
 ENTRYPOINT ["./entrypoint.sh"]
+CMD [""]
