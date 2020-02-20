@@ -22,7 +22,8 @@ RUN \
         libboost-filesystem-dev \
         libboost-iostreams-dev \
         zlib1g-dev \
-        openjdk-12-jdk
+        openjdk-12-jdk \
+        g++
 
 
 WORKDIR /home
@@ -39,6 +40,3 @@ RUN \
 RUN make
 
 WORKDIR /home/strix/bin
-
-ENTRYPOINT ["./entrypoint.sh"]
-CMD [""]
