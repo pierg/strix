@@ -23,9 +23,9 @@ params = '-f "true -> true" --ins="a" --outs="b"'
 print(">>>>" + params)
 
 args = ['./strix', params]
-subprocess.call(args)
+# subprocess.call(args)
 
 
-# output = subprocess.check_output(['./strix',  ""])
+output = subprocess.check_output(['./strix',  params])
 
-# print(output)
+print("OUTPUT: " + output)
