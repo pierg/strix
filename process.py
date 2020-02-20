@@ -20,6 +20,7 @@ assumptions, guarantees, ins, outs = parse(file)
 # params = ' -f "' + Implies(assumptions, guarantees) + '" --ins="' + ins + '" --outs="' + outs + '"'
 params = '--formula "true -> true" --ins="a" --outs="b"'
 
+print(params)
 
 args = ['./strix', params]
 subprocess.call(args)
