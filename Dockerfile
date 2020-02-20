@@ -39,3 +39,6 @@ RUN \
 RUN make
 
 WORKDIR /home/strix/bin
+
+ENTRYPOINT ["./entrypoint.sh"]
+CMD [""]
