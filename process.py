@@ -18,7 +18,7 @@ file = files_folder + sys.argv[1]
 assumptions, guarantees, ins, outs = parse(file)
 
 # params = ' -f "' + Implies(assumptions, guarantees) + '" --ins="' + ins + '" --outs="' + outs + '"'
-params = '-f "true -> true"'
+params = '--formula "true -> true" --ins="a" --outs="b"'
 
 
 args = ['./strix', params]
