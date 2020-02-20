@@ -1,8 +1,8 @@
 
 if [ $# -eq 0 ]
   then
-    echo "Lauching Strix with Parameters:"
-    echo "Not Supported"
+    echo "Running bash"
+    bash
 else
     echo "Lauching Strix with Parameters: " "$@"
     ./strix "$@"
