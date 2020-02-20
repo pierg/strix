@@ -32,7 +32,4 @@ RUN git clone https://github.com/pierg/strix.git
 
 WORKDIR /home/strix
 
-RUN chmod +x entrypoint.sh
-RUN chmod +x run_strix.sh
-
 ENTRYPOINT ["./entrypoint.sh"]
