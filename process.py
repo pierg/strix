@@ -17,15 +17,12 @@ file = files_folder + sys.argv[1]
 
 assumptions, guarantees, ins, outs = parse(file)
 
-# params = ' -f "' + Implies(assumptions, guarantees) + '" --ins="' + ins + '" --outs="' + outs + '"'
-params = '-f "true -> true" --ins="a" --outs="b"'
+params = ' -f "' + Implies(assumptions, guarantees) + '" --ins="' + ins + '" --outs="' + outs + '"'
+# params = '-f "true -> true" --ins="a" --outs="b"'
 
-print(">>>>" + params)
-
-args = ['./strix', params]
+# args = ['./strix', params]
 # subprocess.call(args)
-
 
 output = subprocess.check_output(['./strix',  params])
 
-print("OUTPUT: " + output)
+print("OUTPUT:\n" + output)
