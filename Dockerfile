@@ -10,7 +10,8 @@ RUN \
     apt install -y \
         git \
         unzip \
-        nano
+        nano \
+        wget
 
 # Install strix dependencies
 RUN \
@@ -24,7 +25,13 @@ RUN \
         zlib1g-dev \
         openjdk-12-jdk \
         python3-pip \
-        python3-dev
+        python3-dev \
+
+
+RUN apt update \
+    && apt install -y \
+    software-properties-common \
+    openjdk-11-jdk
 
 
 WORKDIR /home

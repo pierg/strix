@@ -5,6 +5,7 @@ from logic import *
 from parser import parse
 
 
+
 if sys.argv[1] is None:
     raise Exception("No input file specified")
 
